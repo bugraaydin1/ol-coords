@@ -29,7 +29,7 @@ class $778376d6390edf49$export$2e2bcd8739ae039 extends ol.control.Control {
         input.className = "form-control";
         input.type = "tel";
         input.style.background = "transparent";
-        input.style.width = "140px";
+        input.style.width = "110px";
         input.style.height = "21px";
         input.style.border = "none";
         input.style.outline = "none";
@@ -49,7 +49,7 @@ class $778376d6390edf49$export$2e2bcd8739ae039 extends ol.control.Control {
             target: options.target
         });
         const setInputCollapse = (collapse = true)=>{
-            input.style.width = collapse ? "140px" : "240px";
+            input.style.width = collapse ? "110px" : "210px";
         };
         input.addEventListener("focus", ()=>{
             setInputCollapse(false);

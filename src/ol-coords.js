@@ -14,7 +14,7 @@ export default class CoordsControl extends ol.control.Control {
 		input.className = "form-control";
 		input.type = "tel";
 		input.style.background = "transparent";
-		input.style.width = "140px";
+		input.style.width = "110px";
 		input.style.height = "21px";
 		input.style.border = "none";
 		input.style.outline = "none";
@@ -39,7 +39,7 @@ export default class CoordsControl extends ol.control.Control {
 		});
 
 		const setInputCollapse = (collapse = true) => {
-			input.style.width = collapse ? "140px" : "240px";
+			input.style.width = collapse ? "110px" : "210px";
 		};
 
 		input.addEventListener("focus", () => {
