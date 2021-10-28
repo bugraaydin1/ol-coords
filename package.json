@@ -1,0 +1,45 @@
+{
+	"name": "ol-coords",
+	"version": "1.0.0",
+	"description": "Fly to coordinates Control for OpenLayers",
+	"main": "dist/coords.js",
+	"source": "src/ol-coords.js",
+	"targets": {
+		"main": {
+			"outputFormat": "esmodule"
+		}
+	},
+	"type": "module",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"scripts": {
+		"start": "parcel",
+		"build": "rm -r ./dist & parcel build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bugraaydin1/ol-coords.git"
+	},
+	"keywords": [
+		"openlayers",
+		"ol",
+		"control",
+		"coordinates",
+		"coords",
+		"goto",
+		"fly"
+	],
+	"author": "Ahmet Buğra Aydın <bugraaydin1@hotmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bugraaydin1/ol-coords/issues"
+	},
+	"homepage": "https://github.com/bugraaydin1/ol-coords#readme",
+	"dependencies": {
+		"@swc/helpers": "^0.2.11",
+		"ol": "^6.9.0"
+	},
+	"devDependencies": {
+		"parcel": "^2.0.0"
+	}
+}
