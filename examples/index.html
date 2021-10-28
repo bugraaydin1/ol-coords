@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Open Layers Coordinate Control</title>
+	</head>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css"
+		type="text/css"
+	/>
+	<style>
+		.map {
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+		}
+	</style>
+
+	<body>
+		<h2>Coordinate Control Map</h2>
+		<div id="map" class="map"></div>
+		<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+		<script type="module" src="../dist/coords.js"></script>
+		<script type="module" src="ol-coords.js"></script>
+	</body>
+</html>
