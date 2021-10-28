@@ -1,0 +1,8 @@
+# modules 
+node_modules
+
+#config
+.vscode
+
+# custom
+.parcel-cache
