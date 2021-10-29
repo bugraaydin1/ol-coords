@@ -15,7 +15,7 @@ npm install ol-coords
 
 ## Usage
 
-There is 2 way of using this control in your project:
+There is 2 ways of using this control in your project:
 
 #### React (etc.)
 
@@ -35,7 +35,7 @@ function App() {
 			],
 			controls: [
 				new ZoomSlider(),
-				new CoordsControl({ placeholder: "Fly to coordinates" }),
+				new CoordsControl({ placeholder: "Fly to coords" }),
 			],
 			view: new View({
 				zoom: 7,
