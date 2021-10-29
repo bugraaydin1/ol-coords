@@ -44,11 +44,13 @@
 	},
 	"homepage": "https://github.com/bugraaydin1/ol-coords#readme",
 	"dependencies": {
-		"@swc/helpers": "^0.2.11",
-		"ol": ">6.0.0"
+		"@swc/helpers": "^0.2.11"
 	},
 	"devDependencies": {
 		"jest": "^27.3.1",
 		"parcel": "^2.0.0"
+	},
+	"optionalDependencies": {
+		"ol": ">6.0.0"
 	}
 }
