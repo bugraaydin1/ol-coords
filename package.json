@@ -2,11 +2,19 @@
 	"name": "ol-coords",
 	"version": "1.0.1-1",
 	"description": "Fly to coordinates Control for OpenLayers",
-	"main": "dist/coords.js",
-	"source": "src/ol-coords.js",
+	"main": "dist/ol-coords.js",
 	"targets": {
 		"main": {
-			"outputFormat": "esmodule"
+			"source": "src/ol-coords.js",
+			"distDir": "./dist",
+			"outputFormat": "esmodule",
+			"isLibrary": true
+		},
+		"cdn": {
+			"source": "src/ol-coords-cdn.js",
+			"distDir": "./dist/cdn",
+			"outputFormat": "esmodule",
+			"isLibrary": true
 		}
 	},
 	"type": "module",
@@ -37,7 +45,7 @@
 	"homepage": "https://github.com/bugraaydin1/ol-coords#readme",
 	"dependencies": {
 		"@swc/helpers": "^0.2.11",
-		"ol": "^6.9.0"
+		"ol": ">6.0.0"
 	},
 	"devDependencies": {
 		"jest": "^27.3.1",
