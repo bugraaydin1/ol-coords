@@ -10,7 +10,7 @@ import OSM from "ol/source/OSM";
 import TileLayer from "ol/layer/Tile";
 import { get as getProjection } from "ol/proj";
 import { ZoomSlider } from "ol/control";
-import CoordsControl from "ol-coords/dist/coords";
+import CoordsControl from "ol-coords/dist/ol-coords";
 import "ol/ol.css";
 
 function App() {
