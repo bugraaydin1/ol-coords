@@ -1,4 +1,4 @@
-class $778376d6390edf49$export$2e2bcd8739ae039 extends ol.control.Control {
+class $02fb3e6aed87b161$export$2e2bcd8739ae039 extends ol.control.Control {
     handleGotoCoords(evt) {
         evt.preventDefault();
         let coords;
@@ -8,7 +8,7 @@ class $778376d6390edf49$export$2e2bcd8739ae039 extends ol.control.Control {
             );
             if (coords.length !== 2) {
                 coords = undefined;
-                throw new Error("Input is not valid coordinates array.");
+                throw new Error("Input is not a valid coordinates array.");
             }
         } catch (err) {
             console.warn(err);
@@ -66,5 +66,5 @@ class $778376d6390edf49$export$2e2bcd8739ae039 extends ol.control.Control {
 }
 
 
-export {$778376d6390edf49$export$2e2bcd8739ae039 as default};
-//# sourceMappingURL=coords.js.map
+export {$02fb3e6aed87b161$export$2e2bcd8739ae039 as default};
+//# sourceMappingURL=ol-coords-cdn.js.map

@@ -1,6 +1,4 @@
-import { Control } from "ol/control";
-
-export default class CoordsControl extends Control {
+export default class CoordsControl extends ol.control.Control {
 	constructor(opt_options) {
 		const options = opt_options || {};
 
