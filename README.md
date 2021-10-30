@@ -43,7 +43,7 @@ function App() {
 			],
 			controls: [
 				new ZoomSlider(),
-				new CoordsControl({ placeholder: "Fly to coordinates" }),
+				new CoordsControl({ placeholder: "Fly to coords" }),
 			],
 			view: new View({
 				zoom: 7,
