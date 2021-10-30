@@ -15,9 +15,17 @@ npm install ol-coords
 
 ## Usage
 
-There is 2 way of using this control in your project:
+There is 3 ways of using this control in your project:
 
 #### React (etc.)
+
+Install `ol` package if not already installed
+
+```sh
+npm install ol
+```
+
+Use the control as:
 
 ```jsx
 import React, { useEffect } from "react";
@@ -60,26 +68,32 @@ export default App;
 
 placeholder: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-#### CDN
+#### CDN (without bundler)
 
-You can load OpenLayers javascript and css CDN library as:
+[codepen.io demo](https://codepen.io/bugraaydin1/pen/zYddRRv)
 
-```javascript
-<script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css" />
+- Create `index.html` file and load OpenLayers javascript & css file from CDN.
+- Create `map.js` and load this script as `type="module"` in `index.html`
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css"
+	type="text/css"
+/>
+
+<body>
+	<h2>Coordinate Control Map</h2>
+	<div id="map" class="map"></div>
+	<script type="module" src="map.js"></script>
+</body>
 ```
 
-Add `map.js` in your existing OpenLayers app, then load the ol-coords control from `node_modules` and map.js
+Finally, `import` CoordsControl where you define the map as we do in `map.js`:
 
 ```javascript
-<script type="module" src="node_modules/ol-coords/dist/cdn/ol-coords-cdn.js"></script>
-<script type="module" src="map.js"></script>
-```
-
-Finally, implement CoordsControl where you define the map as we do in: `map.js`
-
-```javascript
-import CoordsControl from "./node_modules/ol-coords/dist/cdn/ol-coords-cdn.js";
+import CoordsControl from "https://cdn.skypack.dev/-/ol-coords@v1.0.1-sXJYhG5Btz3WYSzwvHZH/dist=es2020,mode=imports/optimized/ol-coords.js";
 
 new ol.Map({
 	target: "map",
@@ -106,14 +120,32 @@ new ol.Map({
 
 placeholder: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-- Please note, for browsers to understand `import` statement, you need to use a bundler (Parcel, Webpack, Browserify etc.)
+- [This](#cdn-without-bundler) method can be used only on modern browsers supporting ES Modules.
 
-#### Parcel
+#### CDN (with bundler - Parcel, Webpack, Browserify etc.)
 
-You can install parcel running
-`npm i --save-dev parcel`
+- Create `index.html` and `map.js` files as shown in [CDN (without bundler)](#cdn-without-bundler).
+- Only `import` source of `CoordsControl` is different from in [CDN (without bundler)](#cdn-without-bundler).
 
-Then just run `parcel index.html` to open the app in browser: http://localhost:1234/
+`import` CoordsControl from `node_modules` where you define the map as we do in `map.js`:
+
+```javascript
+import CoordsControl from "./node_modules/ol-coords/dist/cdn/ol-coords-cdn.js";
+
+// define ol.Map same as in CDN (without bundler)
+```
+
+##### parameters:
+
+placeholder: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+_For browsers to understand `import` statement, you need to use a bundler._
+
+#### _Parcel_
+
+- You can install parcel running `npm i --save-dev parcel`
+
+- Then just run `parcel index.html` to open the app in browser: http://localhost:1234/
 
 ## Author
 
