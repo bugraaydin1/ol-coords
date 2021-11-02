@@ -1,6 +1,6 @@
 # Coordinate Control for OpenLayers 🎯
 
-![Version](https://img.shields.io/badge/version-1.0.2-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000)
 [![Github: bugraaydin1](https://img.shields.io/badge/github-bugraaydin1-green)](https://github.com/bugraaydin1/)
 
 > Add coordinates control over OpenLayers map. The coordinate entered is evaluated as the current view's projection and centered on the map. If the view's projection changes, coordinate will be expected in latter projection.
