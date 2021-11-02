@@ -27,9 +27,12 @@ npm install ol
 
 Use the control as:
 
+[codesandbox demo](https://codesandbox.io/s/ol-coords-react-4xxqd)
+
 ```jsx
 import React, { useEffect } from "react";
 import CoordsControl from "ol-coords/dist/ol-coords";
+...
 import "ol/ol.css";
 
 function App() {
@@ -70,18 +73,18 @@ placeholder: [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 
 #### CDN (without bundler)
 
-[codepen.io demo](https://codepen.io/bugraaydin1/pen/zYddRRv)
+[codesandbox demo](https://codesandbox.io/s/ol-coords-cdn-sknhv)
 
 - Create `index.html` file and load OpenLayers javascript & css file from CDN.
 - Create `map.js` and load this script as `type="module"` in `index.html`
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
 <link
 	rel="stylesheet"
 	href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css"
 	type="text/css"
 />
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
 
 <body>
 	<h2>Coordinate Control Map</h2>
